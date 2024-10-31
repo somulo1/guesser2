@@ -1,7 +1,6 @@
 package helperfunctions
 
-//import "fmt"
-
+// import "fmt"
 func LinearRg(x, y []float64) (float64, float64) {
 	// y = mx + c
 	var numerator float64
