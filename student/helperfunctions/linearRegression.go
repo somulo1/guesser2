@@ -9,10 +9,14 @@ func LinearRg(x, y []float64) (float64, float64) {
 	meanx := Average(x)
 
 	for i := 0; i < len(x); i++ {
-		numerator += (x[i] - meanx) * (y[i] - meany)
-		denominator += (x[i] - meanx) * (x[i] - meanx)
+		if i != len(x)-1{
+			numerator += (x[i] - meanx) * (y[i] - meany)
+			denominator += (x[i] - meanx) * (x[i] - meanx)
+		}
+	
 	}
 	m := numerator / denominator
 	a := meany - m*meanx
 	return m, a
 }
+
