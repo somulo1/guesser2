@@ -6,10 +6,11 @@ import (
 	"os"
 	"strconv"
 
-	"guess-it-2/helperfunctions"
+	"student/helperfunctions"
 )
 
 func main() {
+	const windowsize = 5
 	if len(os.Args) != 1 {
 		fmt.Println("Usage: go run .")
 		return
@@ -34,6 +35,9 @@ func main() {
 		for i := 0; i < len(sliceNum); i++ {
 			xi = append(xi, float64(i))
 		}
+		if len(sliceNum) >= windowsize {
+			sliceNum = sliceNum[len(sliceNum)-windowsize:]
+		}
 
 		if len(sliceNum) > 1 {
 
@@ -43,3 +47,4 @@ func main() {
 		}
 	}
 }
+
