@@ -1,5 +1,5 @@
-#!/bin/s
-# executable
+#!/bin/sh
+
 cd student
 
 go run main.go

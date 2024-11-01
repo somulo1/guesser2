@@ -19,4 +19,3 @@ func LinearRg(x, y []float64) (float64, float64) {
 	a := meany - m*meanx
 	return m, a
 }
-
