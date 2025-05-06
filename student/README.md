@@ -53,9 +53,7 @@ or
 ```npm install ``` ,     the run :
 ``` bash
     npm start
-
 ```
-
 Input File Format
 
     The input file (e.g., data.txt) must contain a list of float64 numbers separated by newlines or spaces.
