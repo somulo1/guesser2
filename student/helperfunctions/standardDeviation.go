@@ -1,3 +1,5 @@
+// calaculating standard deviation
+
 package helperfunctions
 
 import "math"
