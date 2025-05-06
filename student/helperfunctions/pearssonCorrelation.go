@@ -1,3 +1,5 @@
+// calculating pearson correlation
+
 package helperfunctions
 
 import "math"
